@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Milligram Typography</title>
+
+        <!-- all  meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage for Milligram Frontend Framework">
+        <meta name="author" content="Ali">
+
+        <!-- Milligram connection using CDN  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <style>
+
+            #container{
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+            #heading{
+                text-align: center;
+            }
+
+            header{
+                margin: 1rem;
+            }
+
+            .headingDesign{
+                margin-top: 10px;
+                padding: 10px;
+                background-color: blueviolet;
+                color: white;
+                width: 20rem;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div id="bodyDiv" class="row">
+
+            <div id="container" class="column column-90">
+
+                <header>
+
+                    <h3 id="heading">Documentory Of Milligram</h3>
+
+                </header>
+
+                <main>
+
+                    <div id="introDiv">
+                        <h5 class="headingDesign">About Milligram</h5>
+                        <p>Milligram is a minimalist CSS framework designed to be lightweight and easy to use. It provides a clean and simple design, which is suitable for rapid prototyping and responsive design. Milligram is small (Gzipped) at around 2 kilobytes and contains only the essential CSS rules.</p>
+                    </div>
+
+                    <div id="featureDiv">
+                        <p class="headingDesign">Features of Milligram</p>
+                        <ul>
+                            <li>Light Weight</li>
+                            <li>Provide simple and strong Grid Layout</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+
+                    <div id="gridDiv">
+                        
+                        <p class="headingDesign">Grid System</p>
+                        <p>Milligram provides a simple flexbox based grid system.</p>
+
+                        <ul>
+                            <li>row</li>
+                            <li>column</li>
+                            <li>column-N</li>
+                            <li>column-offset-N</li>
+                        </ul>
+
+                        <pre>
+                            <code> 
+                                &lt;div class="row"&gt;
+                                    &lt;div class="column column-50"&gt;Column 50%&lt;/div&gt;
+                                    &lt;div class="column column-50"&gt;Column 50%&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class="column column-25"&gt;Column 25%&lt;/div&gt;
+                                    &lt;div class="column column-75"&gt;Column 75%&lt;/div&gt;
+                                &lt;/div&gt;
+                            </code>
+                            <!-- &lt; = less than ___ &gt; = greater then -->
+                        </pre>
+                    </div>
+
+                    <div id="typographyDiv">
+                        <p class="headingDesign">Typography :</p>
+                        <p>Milligram provides ready-made classes for styling text and headings.</p>
+
+                        <pre>
+                            <code>
+                                &lt;h1&gt;Heading 1&lt;/h1&gt;
+                                &lt;h2&gt;Heading 2&lt;/h2&gt;
+                                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                                &lt;blockquote&gt;This is a blockquote.&lt;/blockquote&gt;
+
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div id="buttonDiv">
+                        <p class="headingDesign">Buttons</p>
+                        <p>Classes can be used for different types of buttons.</p>
+
+                        <ul>
+                            <li>button</li>
+                            <li>button-outline</li>
+                            <li>button-clear</li>
+                            <li>button-primary</li>
+                        </ul>
+
+                        <pre>
+                            <code>
+                                &lt;a class="button" href="#"&gt;Default Button&lt;/a&gt;
+                                &lt;button class="button button-outline"&gt;Outline Button&lt;/button&gt;
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div>
+                        <p class="headingDesign">Forms </p>
+                        <p>There are pre-defined styles for forms.</p>
+
+                        <pre>
+                            <code>
+                                &lt;form&gt;
+                                        &lt;fieldset&gt;
+                                            &lt;label for="name"&gt;Name&lt;/label&gt;
+                                            &lt;input type="text" id="name" placeholder="Enter your name"&gt;
+                                            &lt;label for="email"&gt;Email&lt;/label&gt;
+                                            &lt;input type="email" id="email" placeholder="Enter your email"&gt;
+                                            &lt;label for="message"&gt;Message&lt;/label&gt;
+                                            &lt;textarea id="message" placeholder="Enter your message"&gt;&lt;/textarea&gt;
+                                            &lt;input class="button-primary" type="submit" value="Submit"&gt;
+                                        &lt;/fieldset&gt;
+                                &lt;/form&gt;
+
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div>
+                        <p class="headingDesign">Tables</p>
+                        <p>There is a default class for tables.</p>
+
+                        <pre>
+                            <code>
+                                &lt;table&gt;
+                                    &lt;thead&gt;
+                                        &lt;tr&gt;
+                                            &lt;th&gt;Name&lt;/th&gt;
+                                            &lt;th&gt;Age&lt;/th&gt;
+                                            &lt;th&gt;Location&lt;/th&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/thead&gt;
+                                    &lt;tbody&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;John&lt;/td&gt;
+                                            &lt;td&gt;28&lt;/td&gt;
+                                            &lt;td&gt;USA&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                        &lt;tr&gt;
+                                            &lt;td&gt;Jane&lt;/td&gt;
+                                            &lt;td&gt;25&lt;/td&gt;
+                                            &lt;td&gt;UK&lt;/td&gt;
+                                        &lt;/tr&gt;
+                                    &lt;/tbody&gt;
+                                &lt;/table&gt;
+
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div>
+                        <p class="headingDesign">Lists</p>
+
+                        <ul>
+                            <li>
+                                Ordered List : 
+
+                                <pre>
+                                    <code>
+                                        &lt;ol&gt;
+                                            &lt;li&gt;Item 1&lt;/li&gt;
+                                            &lt;li&gt;Item 2&lt;/li&gt;
+                                            &lt;li&gt;Item 3&lt;/li&gt;
+                                        &lt;/ol&gt;
+
+                                    </code>
+                                </pre>
+                            </li>
+
+                            <li>
+                                Unordered List : 
+
+                                <pre>
+                                    <code>
+                                        &lt;ul&gt;
+                                            &lt;li&gt;Item 1&lt;/li&gt;
+                                            &lt;li&gt;Item 2&lt;/li&gt;
+                                            &lt;li&gt;Item 3&lt;/li&gt;
+                                        &lt;/ul&gt;
+
+                                    </code>
+                                </pre>
+                            </li>
+                        </ul>
+                    </div>
+
+                </main>
+
+                <footer>
+                    <div id="footerDiv" style="text-align: center;">
+
+                        <p>This website is created by <a href="https://github.com/alihaidarewu">Ali Haidar</a></p>
+
+                    </div>
+                </footer>
+
+            </div>
+
+        </div>
+        
+    </body>
+
+</html>

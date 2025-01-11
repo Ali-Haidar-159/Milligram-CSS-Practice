@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Milligram Form & Buttons</title>
+
+        <!-- all  meta tags here  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a practice webpage for Milligram Frontend Framework">
+        <meta name="author" content="Ali">
+
+        <!-- Milligram connection using CDN  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <style>
+
+            #container{
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div id="bodyDiv" class="row">
+
+            <div id="container" class="column column-90">
+
+                <div id="header">
+
+                    <button class="button-outline">Create New</button>
+
+                </div>
+
+                <div id="formDiv">
+
+                    <form action="mailto:alihaidar379227@proton.me" method="post" enctype="text/plain">
+
+                        <fieldset>
+
+                            <legend style="margin: 5px auto;">Create New Account</legend>
+
+                            <label for="userName">Enter a user name :</label>
+                            <input type="text" placeholder="ali123xyz" required>
+
+                            <label for="email">Enter a email : </label>
+                            <input type="email" placeholder="xyz@yahoo.com">
+
+                            <label for="pass">Enter a password : </label>
+                            <input type="password" placeholder="a-zA-Z0-9@+">
+
+                            <label for="pass">Enter a subject : </label>
+                            <select name="subject" id="subject">
+                                <option value="CSE">CSE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="CE">CE</option>
+                            </select>
+
+                        </fieldset>
+
+                    </form>
+
+                </div>
+
+                <div id="footerDiv" class="clear-fix">
+
+                    <div id="leftSideFooter" class="float-left">
+
+                        <button class="button">Submit</button>
+                        <button class="button-clear">Reset</button>
+
+                    </div>
+
+                    <div id="rightSideFooter" class="float-right">
+
+                        <input type="checkbox" name="" id="">
+                        <label style="display: inline-block;" for="remember">remember me</label>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        
+    </body>
+
+</html>
